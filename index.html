@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/beb77a7f28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="hidder">
+        <div class="container">
+            <nav>
+                <img src="output-onlinetexttools.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a  href="#about" onclick=" clickabout()">About</a></li>
+                    <li><a href="#sevices" onclick="clickservicse()">Services</a></li>
+                    <li><a href="#portfolio" onclick="clickproject()">Project</a></li>
+                    <li><a href="#contact" onclick="clickcontact()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Anuja Patil</span></h1>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <a href="#hidder" class="back" onclick="backabout()"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="image" src="pixelcut-export (1).png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm Anuja Patil, studying Btech at Rajarambapu Institude Of Technology ,Islampur .
+                         Passionate about computer scince, I've honed skills in web development.
+                         Throughout my academic journey,
+                          I have delved into various aspects of information technology , gaining valuable insights and skills in HTML,CSS and JS.</p>
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')" >skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')" >Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')" >Education</p>
+                          </div>
+                          <div class="tab-contents  active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Designing web </li>
+                                <li><span>UI/UX</span><br>Designing web/app interfaces </li>
+                                <li><span>JAVA</span><br>Solve the problem </li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>programming training at RIT </li>
+                                <li><span>2024</span><br>Done one NPTEL certification in joy computing python course </li>
+                                <li><span>2023</span><br>done two project based on arduino </li>
+                                <li><span>2023-2024</span><br>done multiple certification on infosys </li>
+                                <li><span>2023-2024</span><br>done six week online intership at Metacraft Lab </li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2026</span><br>Btech from RIT Islampur </li>
+                                <li><span>2022</span><br>HSC from YC Islampur </li>
+                                <li><span>2020</span><br>SSC from Takave Highschool</li>
+                               
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="sevices">
+        <a href="#hidder" id="back1" onclick="backservices()" class="back"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desing</h2>
+                    <p>
+                        Custom web design, responsive layouts, UI/UX design, e-commerce solutions, SEO optimization, 
+                        and ongoing maintenance for optimal user experience.</p>
+                       
+                        
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Desing</h2>
+                    <p>
+                        UI/UX design focused on intuitive interfaces, user research, prototyping, usability testing,
+                         and crafting compelling user experiences for websites and apps.
+                         </p>
+                       
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JAVA Programming</h2>
+                    <p>
+                        Java programming: Application development, algorithm design, debugging, object-oriented principles, 
+                        and creating efficient, scalable software solutions for diverse needs.
+                         </p>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <a href="#hidder" class="back" onclick="backproject()"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="weather.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>A weather app provides current weather conditions and forecasts by using data from meteorological sources.
+                             It typically includes information on temperature, humidity, wind speed, and precipitation. </p>
+                             <a href="https://669be4fc9dd1e091df104a65--boisterous-alfajores-04c2f7.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="digi.jpg">
+                    <div class="layer">
+                        <h3>Digital stop watch</h3>
+                        <p>A digital stopwatch project involves creating a device that accurately measures elapsed time using electronic components like a microcontroller and a display. It features functions such as start,
+                             stop, reset, and lap timing, often implemented through programming and circuit design.</p>
+                             <a href="https://669be5e059d015013760b3c4--strong-figolla-b26a2f.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="atm1.png">
+                    <div class="layer">
+                        <h3>Backing Transaction</h3>
+                        <p>Developing a banking transaction system: secure, efficient processing, real-time updates, 
+                            user-friendly interface, fraud detection, and seamless integration.</p>
+                             <a href="https://github.com/anujaappasopatil/ATM/blob/main/ATM/Index.java"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <a href="#hidder" class="back" onclick="backcontact()"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>anujap700@gamil.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7038900984</p>
+                    <div class="social-icons">
+                     
+                        <a href="https://www.linkedin.com/in/anuja-a-patil-906b332aa"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/anujaappasopatil"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Meassage" rows="6" placeholder="Your Meassage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+</body>
+<script src="java.js"></script>
+
+</html>
